@@ -5,26 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        form {
+
+            /* margin-left: 570px;*/
+            margin-left: 270px;
+            margin-top: 95px;
+            width: 350px;
+            height: 470px;
+            background-color: rgb(62, 199, 211);
+            border: 3px solid red;
+            padding: 15px;
+            border-radius: 50px;
+            box-shadow: 3px 3px 10px #333;
+
+
+        }
+
+
+
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        a {
+            text-align: center;
+        }
+
+
+        input[type="Email"],
+        input[type="password"],
+        .bun {
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 25px;
+            height: 40px;
+            border-radius: 5px;
+            outline: 0;
+            font-size: medium;
+        }
+
+        label {
+            font-size: medium;
+        }
+
+        .bun:hover {
+            color: black;
+        }
+
+        button {
+            background-color: cadetblue;
+            width: 100px;
+            height: 40px;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Login</h1>
 
+    <a href="Project_1.html"><button>back</button></a>
     <form action="Project_1.html">
-        
-        <label for="mail">Email</label><br>
+        <h1>Login</h1>
+
         <input type="Email" id="mail" required placeholder="Email">
         <br><br>
-        <label for="pass">Password</label><br>
         <input type="password" id="pass" placeholder="Password">
         <br><br>
-        <button style="background-color: chocolate;">sign in</button>
-        <button><img src="https://img.icons8.com/color/512/google-logo.png" width="12px" height="12px"> google</button>
+        <button class="bun" style="background-color: chocolate;">sign in</button>
+        <button class="bun"><img src="https://img.icons8.com/color/512/google-logo.png" width="12px" height="12px">
+            google</button>
         <br><br>
+
+        <h3>Don't have an account yet? </h3>
+        <h2><a href="Signup.html">Create an account</a></h2>
     </form>
 
-    <h3>Don't have an account yet? </h3>
-    <a href="Signup.html">Create an account</a>
+
+
 </body>
 
 </html>

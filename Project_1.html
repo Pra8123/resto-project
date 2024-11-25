@@ -5,91 +5,320 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant </title>
+
     <style>
         h1 {
             text-align: center;
         }
 
-        .nav {
+        /*        .nav {
             background-color: none;
             display: flex;
             justify-content: center;
 
+
+        }*/
+
+        .menu {
+            display: flex;
+            gap: 150px;
+            padding-left: 90px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+
+        .loc {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .time {
+            background-color: bisque;
+            border-radius: 5px;
+            width: 250px;
+            height: 390px;
+            padding-top: 50px;
+            margin-right: 100px;
+        }
+
+        .time h3,
+        h4 {
+            text-align: center;
+        }
+
+        #hea {
+            text-align: center;
+            color: brown;
+
+        }
+
+        .about {
+            padding-top: 200px;
+            display: flex;
+
+        }
+
+        .let {
+            padding: 10px 10px 10px 10px;
+        }
+
+        .let h2 {
+            color: red;
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .nav .tex ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav .tex ul li {
+            list-style: none;
+            margin-left: 15px;
+
+        }
+
+        .nav .tex ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .nav .tex input[type="button"] {
+            color: blue;
+
+            border: 1px solid rgb(230, 12, 12);
+            border-radius: 5px;
+            padding: 0px 10px;
+            margin-left: 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .home {
+            padding-top: 90px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+
+            padding-top: 20px;
+            padding-bottom: 30px;
+            gap: 50px;
+            padding-left: 120px;
+            background-color: antiquewhite
+        }
+
+        .royal {
+            height: 400px;
+            background-color: rgb(127, 242, 255);
+            border: 5px solid red;
+        }
+
+        input[type="search"] {
+            position: absolute;
+            top: 40%;
+            width: 35%;
+            margin-left: 30%;
+            margin-bottom: 25px;
+            height: 40px;
+            border-radius: 18px;
+            font-size: medium;
+            padding-left: 20px;
+        }
+
+        #but {
+            position: absolute;
+            top: 50%;
+            width: 5%;
+            margin-left: 45%;
+            background-color: aqua;
+            margin-bottom: 25px;
+            height: 40px;
+            border-radius: 18px;
+            font-size: medium;
+        }
+
+        #but:hover {
+            background-color: azure;
+        }
+        .royal:hover{
+            transform: scale(1.1); 
+            transition: 0.3s;
         }
     </style>
 </head>
 
 <body>
 
+
     <div class="nav">
-        <div class="logo"> <img src="Logo_resto.png" width="70px" height="90px"></div>
+        <div class="logo">
+            <img src="Logo_resto.png" width="70px" height="90px">
+
+        </div>
         <div class="tex">
-            <h1> Padmavati Resto</h1>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <a href="#menu"> <input style="color: blue;" type="button" value="Visit Us"></a>
+                <a href="login.html"> <input style="color: blue;" type="button" value="Login"></a>
+                <a href="Signup.html"> <input style="color: blue;" type="button" value="Sign up"></a>
+            </ul>
         </div>
     </div>
 
-    <img src="home_resto.jpg" alt="Watch" width="1490 px" height="520px">
-    
-
-    <h2>Enjoy Our<br>Delicious Meals</h2>
- 
-    <a href="booking.html"> <input style="color: blue;" type="button" value="Visit Us"></a>
-    <a href="login.html"> <input style="color: blue;" type="button" value="Login"></a>
-    <a href="Signup.html"> <input style="color: blue;" type="button" value="Sign up"></a>
-
-    <input placeholder="Search">
 
 
+    <div class="home">
+        <img src="home_resto.jpg" alt="Watch" width="100%" height="520px">
+    </div>
 
-    <h1>- - - Our <del style="color: rgb(0, 197, 211);">Regular</del> Special menu - - -</h1>
+    <div class="absolute">
+        <input type="search" id="search" placeholder="Serach for dishes">
+        <a class="butn" href="#menu"> <input style="color: black;" type="button" id="but" value="Visit Us"></a>
+    </div>
 
-    <img src="royal_thali.jpg" width="320px" height="320px">
-    <h2>Rs 349 <sub>M.R.P <del>449</del> 10% off</sub></h2>
-    <img src="punjabi.avif" width="320px" height="320px">
-    <h2>Rs 429 <sub>M.R.P <del>500</del> 15% off</sub></h2>
-    <img src="non.jpg" width="320px" height="320px">
-    <h2>Rs 249 <sub>M.R.P <del>349</del> 10% off</sub></h2>
 
+
+   
+
+    <div class="about" id="about">
+        <div class="let">
+            <h2>Enjoy Our<br>Delicious Meals</h2>
+            <p style="font-size: larger; font-family: Arial, Helvetica, sans-serif;">Welcome to Padmavati Resto, where
+                every meal is crafted with passion, flavor, and a commitment to excellence.
+                Nestled in the heart of Mumbai, we offer a warm, inviting ambiance that’s perfect for any occasion,
+                whether it’s a casual lunch, family dinner, or special celebration. Our menu features a wide array of
+                dishes
+                made from fresh, locally sourced ingredients, blending traditional flavors with modern culinary
+                techniques
+                to create unforgettable experiences for our guests. </p>
+            <p style="font-size: larger; font-family: Arial, Helvetica, sans-serif;">From savory appetizers to decadent
+                desserts, each
+                plate
+                is thoughtfully prepared by our expert chefs to delight your taste buds. Join us for an exceptional
+                dining
+                experience, where quality and service are always our top priorities.</p>
+        </div>
+        <div class="lat">
+            <img
+                src="https://i.ytimg.com/vi/_BmZ9b9EMck/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAODq0z0_ZR_fxJ2EXVQy8TGasHeA">
+        </div>
+    </div>
+
+
+
+    <h1 style="padding-top: 100px;">- - - Our <del style="color: rgb(0, 197, 211);">Regular</del> Special menu - - -
+    </h1>
+
+    <div class="menu" id="menu">
+        <div class="royal">
+            <img src="royal_thali.jpg" width="320px" height="320px">
+            <h2>Rs 349 <sub>M.R.P <del>449</del> 10% off</sub></h2>
+        </div>
+        <div class="royal">
+            <img src="punjabi.avif" width="320px" height="320px">
+            <h2>Rs 429 <sub>M.R.P <del>500</del> 15% off</sub></h2>
+        </div>
+        <div class="royal">
+            <img src="non.jpg" width="320px" height="320px">
+            <h2>Rs 249 <sub>M.R.P <del>349</del> 10% off</sub></h2>
+        </div>
+        <div class="royal">
+            <img src="non.jpg" width="320px" height="320px">
+            <h2>Rs 249 <sub>M.R.P <del>349</del> 10% off</sub></h2>
+        </div>
+        <div class="royal">
+            <img src="punjabi.avif" width="320px" height="320px">
+            <h2>Rs 249 <sub>M.R.P <del>349</del> 10% off</sub></h2>
+        </div>
+        <div class="royal">
+            <img src="non.jpg" width="320px" height="320px">
+            <h2>Rs 249 <sub>M.R.P <del>349</del> 10% off</sub></h2>
+        </div>
+    </div>
     <hr>
+
+
     <h1>Gallery</h1>
+    <div class="gallery">
+        <div><a href="resto1.jpg" target="_blank"><img src="resto1.jpg" width="320px" height="320px"></a>
+            <h2></h2>
+        </div>
+        <div> <a href="resto2.webp" target="_blank"><img src="resto2.webp" width="320px" height="320px"></a>
+            <h2></h2>
+        </div>
+        <div> <a href="resto3.jpg" target="_blank"><img src="resto3.jpg" width="320px" height="320px"></a>
+            <h2></h2>
+        </div>
+        <div> <a href="resto1.jpg" target="_blank"><img src="resto1.jpg" width="320px" height="320px"></a>
+            <h2></h2>
+        </div>
+    </div>
 
-    <a href="resto1.jpg" target="_blank"><img src="resto1.jpg" width="320px" height="320px"></a>
-    <h2></h2>
-    <a href="resto2.webp" target="_blank"><img src="resto2.webp" width="320px" height="320px"></a>
-    <h2></h2>
-    <a href="resto3.jpg" target="_blank"><img src="resto3.jpg" width="320px" height="320px"></a>
-    <h2></h2>
 
-    <h1>Special video </h1>
-    <iframe width="490" height="315" src="https://www.youtube.com/embed/Seg3Rmts7Yo?si=Bj0ZD0KiBJ4MLKod"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="490" height="315" src="https://www.youtube.com/embed/qVMc30aoMcQ?si=wTE-23xZHzW0qobC"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="490" height="315" src="https://www.youtube.com/embed/kqZpPAGltvw?si=P_fJlOC3elPp-qeN"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1 style="padding-top: 30px;">Explore More</h1>
+    <div class="explore">
+        <iframe width="490" height="315" src="https://www.youtube.com/embed/Seg3Rmts7Yo?si=Bj0ZD0KiBJ4MLKod"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="490" height="315" src="https://www.youtube.com/embed/qVMc30aoMcQ?si=wTE-23xZHzW0qobC"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="490" height="315" src="https://www.youtube.com/embed/kqZpPAGltvw?si=P_fJlOC3elPp-qeN"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+
     <h1>Location & Timing</h1>
-
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890.3905006958378!2d73.77473207855351!3d18.628917481520435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9bc8a14ad37%3A0xd699484a97a00446!2sRiverview%20Garden%20Family%20Restobar%20%26%20AC%20Banquet!5e0!3m2!1sen!2sin!4v1729530737885!5m2!1sen!2sin"
-        width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    <h3>Monday-Thursday: </h3>
-    <h4>9:00 am- 10:00 pm</h4>
-    <h3>Friday- Saturday</h3>
-    <h4>10:00 am- 9:00 pm</h4>
-    <h3>Sunday</h3>
-    <h4>8:00 am- 12:00 pm</h4>
+    <div class="loc">
+        <div class="lac">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890.3905006958378!2d73.77473207855351!3d18.628917481520435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9bc8a14ad37%3A0xd699484a97a00446!2sRiverview%20Garden%20Family%20Restobar%20%26%20AC%20Banquet!5e0!3m2!1sen!2sin!4v1729530737885!5m2!1sen!2sin"
+                width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="time">
+            <h1 id="hea">Timing</h1>
+            <h3>Monday-Thursday: </h3>
+            <h4>9:00 am- 10:00 pm</h4>
+            <h3>Friday- Saturday</h3>
+            <h4>10:00 am- 9:00 pm</h4>
+            <h3>Sunday</h3>
+            <h4>8:00 am- 12:00 pm</h4>
+        </div>
+    </div>
 
 
     <form action="display.html">
-        <div style="background-color:blanchedalmond;">
+        <div style="background-color:rgb(205, 245, 255);
+        text-align: center;">
             <h1>Contact us</h1>
             <label>Enter Email: </label>
             <input type="text" placeholder="text"><br>
