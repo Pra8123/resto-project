@@ -11,6 +11,10 @@
             text-align: center;
         }
 
+        h4 {
+            color: grey;
+        }
+
         /*        .nav {
             background-color: none;
             display: flex;
@@ -116,11 +120,10 @@
         .gallery {
             display: flex;
             flex-wrap: wrap;
-
             padding-top: 20px;
             padding-bottom: 30px;
             gap: 50px;
-            padding-left: 120px;
+            justify-content: space-around;
             background-color: antiquewhite
         }
 
@@ -148,7 +151,7 @@
             top: 50%;
             width: 5%;
             margin-left: 45%;
-            background-color: aqua;
+            background-color: rgb(176, 203, 203);
             margin-bottom: 25px;
             height: 40px;
             border-radius: 18px;
@@ -164,9 +167,9 @@
             transition: 0.3s;
         }
 
-        .cart{
+        .cart {
             position: absolute;
-            top: 18%;
+            top: 16%;
             width: 35%;
             margin-left: 30%;
             margin-bottom: 25px;
@@ -176,9 +179,89 @@
             padding-left: 20px;
         }
 
-        .cart h1{
+        .cart h1 {
             color: rgb(236, 14, 14);
             font-size: 100px;
+        }
+
+        .container {
+            padding-top: 30px;
+            margin-left: 250px;
+            margin-right: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+
+        }
+
+        .card {
+
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-name {
+            margin-bottom: -20px;
+            margin-left: 5px;
+        }
+
+        .container_p {
+            margin-left: 5px;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+
+        .loc {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-left: 30px;
+            margin-bottom: 100px;
+        }
+
+        .pune {
+            display: flex;
+            justify-content: space-between;
+            height: 120px;
+            width: 470px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .pune:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        .contain {
+            margin-left: 15px;
+        }
+
+        #col {
+            color: grey;
+        }
+
+        .main {
+            margin-left: 30px;
+            font-weight: 500;
+        }
+
+        .item2 {
+            font-size: 70px;
+            color: gray;
+        }
+
+        .item3 {
+            margin-left: 30px;
+            margin-top: 25px;
+        }
+
+        .main{
+            padding-top: 70px;
         }
     </style>
 </head>
@@ -196,7 +279,7 @@
                 <li><a href="#about">ABOUT US</a></li>
                 <li><a href="#menu">MENU</a></li>
                 <li><a href="#">GALLERY</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="location.html">LOCATION</a></li>
                 <a href="#menu"> <input style="color: blue;" type="button" value="Visit Us"></a>
                 <a href="login.html"> <input style="color: blue;" type="button" value="Login"></a>
                 <a href="Signup.html"> <input style="color: blue;" type="button" value="Sign up"></a>
@@ -217,6 +300,44 @@
         <a class="butn" href="#menu"> <input style="color: black;" type="button" id="but" value="Visit Us"></a>
     </div>
 
+    <!--home end -->
+    <div class="container">
+        <div class="card">
+            <div class="hovimage">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAGK00uOU70B6ACRQmupAhjw2fp7AUxZI80Q&s"
+                    width="350px" height="200px">
+            </div>
+            <div class="card-name">
+                <h2>Order online</h2>
+            </div>
+            <div class="container_p">
+                <p>Stay home and order to your doorstep</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="hovimage">
+                <img src="event2.jpg"
+                    width="350px" height="200px">
+            </div>
+            <div class="card-name">
+                <h2>Dining hall</h2>
+            </div>
+            <div class="container_p">
+                <p>view the city's favourite dining</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="hovimage">
+                <img src="event.webp" width="350px" height="200px">
+            </div>
+            <div class="card-name">
+                <h2>Live Events</h2>
+            </div>
+            <div class="container_p">
+                <p>Discover India's best events & concerts</p>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -246,6 +367,102 @@
     </div>
 
 
+    <h1 class="main">Popular localities in and around pune</h1>
+
+    <div class="loc">
+        <div class="pune">
+            <div class="item">
+                <h1 class="contain" >Baner</h1>
+                <h3 class="contain" id="col">674 places</h3>
+            </div>
+            <div class="item2">
+                <span>&#8658;</span>
+            </div>
+        </div>
+        <div class="pune">
+            <div class="item">
+                <h1 class="contain">Viman Nagar</h1>
+                <h3 class="contain" id="col">673 places</h3>
+            </div>
+            <div class="item2">
+                <span>&#8658;</span>
+            </div>
+        </div>
+        <div class="pune">
+            <div class="item">
+                <h1 class="contain">Hinjawadi</h1>
+                <h3 class="contain" id="col">1358 places</h3>
+            </div>
+            <div class="item2">
+                <span>&#8658;</span>
+            </div>
+        </div>
+        <div class="pune">
+            <div class="item">
+                <h1 class="contain">Koregaon Park</h1>
+                <h3 class="contain" id="col">250 places</h3>
+            </div>
+            <div class="item2">
+                <span>&#8658;</span>
+            </div>
+        </div>
+        <div class="pune">
+            <div class="item">
+                <h1 class="contain">Wakad</h1>
+                <h3 class="contain" id="col">996 places</h3>
+            </div>
+            <div class="item2">
+                <span>&#8658;</span>
+            </div>
+        </div>
+        <div class="pune">
+            <div class="item">
+                <h1 class="contain">Kothrud</h1>
+                <h3 class="contain" id="col">701 places</h3>
+            </div>
+            <div class="item2">
+                <span>&#8658;</span>
+            </div>
+        </div>
+        <div class="pune">
+            <div class="item">
+                <h1 class="contain">Kalyani Nagar</h1>
+                <h3 class="contain" id="col">166 places</h3>
+            </div>
+            <div class="item2">
+                <span>&#8658;</span>
+            </div>
+        </div>
+        <div class="pune">
+            <div class="item">
+                <h1 class="contain">Kharadi</h1>
+                <h3 class="contain" id="col">852 places</h3>
+            </div>
+            <div class="item2">
+                <span>&#8658;</span>
+            </div>
+        </div>
+        <div class="pune">
+            <div class="item">
+                <h1 class="contain">Chinchwad</h1>
+                <h3 class="contain" id="col">152 places</h3>
+            </div>
+            <div class="item2">
+                <span>&#8658;</span>
+            </div>
+        </div>
+        
+        <div class="pune">
+            <div class="item3">
+                <h2>See more </h2>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <hr>
+
 
     <h1 style="padding-top: 100px;">- - - Our <del style="color: rgb(0, 197, 211);">Regular</del> Special menu - - -
     </h1>
@@ -264,19 +481,19 @@
             <h2>Rs 249 <sub>M.R.P <del>349</del> 10% off</sub></h2>
         </div>
         <div class="royal">
-            <img src="non.jpg" width="320px" height="320px">
+            <img src="poori-aamras-thali.jpg" width="320px" height="320px">
             <h2>Rs 249 <sub>M.R.P <del>349</del> 10% off</sub></h2>
         </div>
         <div class="royal">
-            <img src="punjabi.avif" width="320px" height="320px">
+            <img src="south.png" width="320px" height="320px">
             <h2>Rs 249 <sub>M.R.P <del>349</del> 10% off</sub></h2>
         </div>
         <div class="royal">
-            <img src="non.jpg" width="320px" height="320px">
+            <img src="south2.jpg" width="320px" height="320px">
             <h2>Rs 249 <sub>M.R.P <del>349</del> 10% off</sub></h2>
         </div>
         <div class="royal">
-            <img src="non.jpg" width="320px" height="320px">
+            <img src="chin.jpeg" width="320px" height="320px">
             <h2>Rs 249 <sub>M.R.P <del>349</del> 10% off</sub></h2>
         </div>
         <div class="royal">
@@ -341,20 +558,11 @@
             <h4>8:00 am- 12:00 pm</h4>
         </div>
     </div>
-
-
-    <form action="display.html">
-        <div style="background-color:rgb(205, 245, 255);
-        text-align: center;">
-            <h1>Contact us</h1>
-            <label>Enter Email: </label>
-            <input type="text" placeholder="text"><br>
-            <label> Message: </label>
-            <input type="text"> nm <br>
-            <button style=" background-color: aqua;">Submit</button>
-        </div>
-    </form>
-
+    <hr>
+    <h4>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content
+        Policies
+        2024. All rights reserved.</h4>
+    <h4>Made by Pratham45</h4>
 
 
 
